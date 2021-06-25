@@ -170,7 +170,8 @@
                                     </div><!-- Sec Title -->
                                     <div class="contact-wrap bg-color6 brd-rd10 w-100">
                                           
-                    <form class="w-100" action="#" method="Post" id="bookingForm">
+                      
+                    <form class="w-100" action="#" method="get" id="bookingForm">
                         <div class="field-box w-100">
                             <label>Pickup Location*</label>
                             <input   type="text" id="location-1" name="origin" placeholder="Pickup Location" required>
@@ -251,15 +252,15 @@
                             
                         </div>
                 
-                    <div class="field-btn w-100" >
+                    <div class="field-box w-100" >
                         <label>Your Name</label>
                         <input type="text" required placeholder="Your Name"   id="name">
                     </div>
-                    <div class="field-btn w-100" >
+                    <div class="field-box w-100" >
                         <label>Your Phone Number</label>
                         <input type="tel"    required placeholder="Phone Number" placeholder="Your Number" id="p" pattern="[6-9]{1}[0-9]{9}" title="Enter Valid Phone Number">          
                     </div>
-                    <div class="field-btn w-100" >
+                    <div class="field-box w-100" >
                         <label>Select Your Car</label>
                         <select id="cars" name="cars"   >
                             <option value="Sedan">Sedan</option>
@@ -267,7 +268,7 @@
                             <option value="Traveller">Traveller</option>
                           </select>
                     </div>
-                    <div class="field-btn w-100" >
+                    <div class="field-box w-100" >
                         <label>Your Trip Mode</label>
                         <select id="ser" name="ser">
                             <option value="One-Way">One-Way</option>
@@ -275,15 +276,15 @@
                         </select>
 
                     </div>
-                    <div class="field-btn w-100" >
+                    <div class="field-box w-100" >
                         <label>Your Pickup Date</label>
                         <input type="date"    required placeholder="01/01/2020"  id="pickupdate">
                     </div>
-                    <div class="field-btn w-100" >
+                    <div class="field-box w-100" >
                         <label>Your Pickup Time</label>
                         <input type="time" required placeholder="9:00AM"  id="pickuptime"   >
                     </div>
-                    <div class="field-btn w-100">
+                    <div class="field-box w-100">
                         <button type="submit"   class="thm-btn grad-bg1 brd-rd5 d-inline-block overflow-hidden position-relative text-center"  onclick="calcRoute()">Find car</button>
                     </div>
                 </form>
@@ -412,6 +413,10 @@
         <script src="assets/js/accessibility.js"></script>
         <script src="assets/js/chart-int.js"></script>
         <script src="assets/js/custom-scripts.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNKpr4auBLgBgiOXJ41UUWTB58MZa6p3E&libraries=places"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="assets/js/main.js"></script>
+ <script src="assets/js/fast2.js"></script>
     </body>
     
     </html>
