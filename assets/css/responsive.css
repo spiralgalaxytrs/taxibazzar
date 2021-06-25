@@ -619,7 +619,7 @@ p,
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
 .cont-info .cont-list > li,
 .widget .list-group ul,
 .about-desc .list-style1 > li {flex: 0 0 100%;max-width: 100%;padding-right: 0;}
