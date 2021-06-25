@@ -213,25 +213,119 @@
                                         <h3 class="mb-0">Taxi Bazzar Booking Form</h3>
                                         <p class="mb-0">Book your drop taxi here!</p>
                                     </div>
-                                    <form class="w-100">
-                                        <div class="field-box position-relative w-100">
-                                            <input class="w-100 brd-rd5" type="text" placeholder="Name*">
-                                        </div>
-                                        <div class="field-box position-relative w-100">
-                                            <input class="w-100 brd-rd5" type="email" placeholder="E-mail Address*">
-                                        </div>
-                                        <div class="field-box position-relative w-100">
-                                            <input class="w-100 brd-rd5" type="tel" placeholder="Phone*">
-                                        </div>
-                                        <div class="field-box position-relative w-100">
-                                            <textarea class="w-100 brd-rd5" placeholder="Description"></textarea>
-                                        </div>
-                                        <div class="field-btn w-100">
-                                            <button
-                                                class="thm-btn grad-bg1 brd-rd5 d-inline-block overflow-hidden position-relative text-center w-100"
-                                                type="submit">Submit Message</button>
-                                        </div>
-                                    </form>
+                                                        <form class="w-100" action="#" method="get" id="bookingForm">
+
+                        <div class="field-box position-relative w-100">
+                            <input class="w-100 brd-rd5" type="text" id="location-1" name="origin" placeholder="Pickup Location" required>
+                        </div>
+                        <div class="field-box position-relative w-100">
+                            <input type="text" id="location-2" name="destination" class="w-100 brd-rd5" required  placeholder="Drop Location">
+                        </div>
+                        <div id="ma" style="display: none;">  
+                            <b> <div id="output" class="result-table"></div></b>
+                            <div class="container-map" id="google-map"></div>  
+                            <div class="clearfix"></div><!-- /.clearfix -->
+                            <div class="col-md-4 col-sm-7">
+                                <div class="vehicle-content theme-yellow">
+                                    <div class="vehicle-thumbnail">
+                                        <a href="booking.html">
+                                            <img src="assets/images/cars/car-9.png" alt="drop taxi" />
+                                        </a>
+                                    </div><!-- /.vehicle-thumbnail -->
+                                    <div class="vehicle-bottom-content">
+                                       <h2 class="vehicle-title"><a href="#">Sedan</a></h2>
+                                        <div class="vehicle-meta">
+                                            <div id="output1" class="meta-item">
+                                                <span> Price  :  ₹12 / Km.</span>
+                                                <h6 class="meta-item">* Toll/State taxes are excluded</h6>
+                                            </div>
+                                            
+                                        </div><!-- /.meta-left -->
+                                    </div>
+                                    <!-- /.vehicle-bottom-content -->
+                                </div><!-- /.vehicle-content -->
+                            </div><!-- /.col-md-3 -->  
+        
+                            <div class="col-md-4 col-sm-7">
+                                <div class="vehicle-content theme-yellow">
+                                    <div class="vehicle-thumbnail">
+                                        <a href="booking.html">
+                                            <img src="assets/images/cars/car-6.png" alt="one way taxi" />
+                                        </a>
+                                    </div><!-- /.vehicle-thumbnail -->
+                                    <div class="vehicle-bottom-content">
+                                       <h2 class="vehicle-title"><a href="#">SUV</a></h2>
+                                        <div class="vehicle-meta">
+                                            <div id="output2" class="meta-item">
+                                                <span> Price  :  ₹16 / Km.</span>
+                                                <h6 class="meta-item">* Toll/State taxes are excluded</h6>
+                                            </div>
+                                            
+                                        </div><!-- /.meta-left -->
+                                    </div>
+                                    <!-- /.vehicle-bottom-content -->
+                                </div><!-- /.vehicle-content -->
+                            </div><!-- /.col-md-3 -->  
+        
+        
+        
+                            <div class="col-md-4 col-sm-7">
+                                <div class="vehicle-content theme-yellow">
+                                    <div class="vehicle-thumbnail">
+                                        <a href="booking.html">
+                                            <img src="assets/images/cars/car-8.png" alt="drop taxi coimbatore" />
+                                        </a>
+                                    </div><!-- /.vehicle-thumbnail -->
+                                    <div class="vehicle-bottom-content">
+                                       <h2 class="vehicle-title"><a href="#">Traveller</a></h2>
+                                        <div class="vehicle-meta">
+                                            <div id="output3" class="meta-item">
+                                                <span> Price  :  ₹18 / Km.</span>
+                                                <h6 class="meta-item">* Toll/State taxes are excluded</h6>
+                                            </div>
+                                            
+                                        </div><!-- /.meta-left -->
+                                    </div>
+                                    <!-- /.vehicle-bottom-content -->
+                                </div><!-- /.vehicle-content -->
+                            </div><!-- /.col-md-3 --> 
+                            
+                        </div>
+                           
+
+
+
+
+
+                        <div class="field-box position-relative w-100">
+                            <input type="text" required placeholder="Your Name" class="w-100 brd-rd5" id="name">
+                        </div>
+                        <div class="field-box position-relative w-100">
+                            <input type="tel"  class="w-100 brd-rd5" required placeholder="Phone Number" placeholder="Your Number" id="p" pattern="[6-9]{1}[0-9]{9}" title="Enter Valid Phone Number">          
+                        </div>
+                        <div class="field-box position-relative w-100">
+                            <select id="cars" name="cars"  class="w-100 brd-rd5">
+                                <option value="Sedan">Sedan</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Traveller">Traveller</option>
+                              </select>
+                        </div>
+                        <div class="field-box position-relative w-100">                                 
+                                <select id="ser" name="ser" class="w-100 brd-rd5">
+                                    <option value="One-Way">One-Way</option>
+                                    <option value="Round">Round</option>
+                                </select>
+                        </div>
+                        <div class="field-box position-relative w-100">
+                            <input type="date"  class="w-100 brd-rd5" required placeholder="01/01/2020"  id="pickupdate">
+                        </div>
+                        <div class="field-box position-relative w-100">
+                            <input type="time" required placeholder="9:00AM"  id="pickuptime"  class="w-100 brd-rd5">
+                        </div>
+                        <div class="field-btn w-100">
+                            <button type="submit"  class="button"  class="thm-btn grad-bg1 brd-rd5 d-inline-block overflow-hidden position-relative text-center w-100"  onclick="calcRoute()">Find car</button>
+                        </div>
+                    </form>
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-6">
